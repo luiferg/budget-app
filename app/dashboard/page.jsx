@@ -1,10 +1,7 @@
-import { getServerSession } from 'next-auth'
-import { redirect } from 'next/navigation'
+import React from 'react'
 
-export default async function Page() {
-  const session = await getServerSession()
-  if (!session || !session.user) {
-    redirect('api/auth/signin')
-  }
-  return <div>Protected Dashboard</div>
+const DashboardPage = () => {
+  return <div>DashboardPage</div>
 }
+
+export default DashboardPage
