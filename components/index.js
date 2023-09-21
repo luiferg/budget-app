@@ -1,4 +1,5 @@
 import Navbar from './Navbar'
-import SessionProvider from './SessionProvider'
+import { AuthButtonClient } from './AuthButtonClient'
+import { AuthButtonServer } from './AuthButtonServer'
 
-export { Navbar, SessionProvider }
+export { Navbar, AuthButtonClient, AuthButtonServer }

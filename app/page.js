@@ -1,7 +1,13 @@
-import React from 'react'
+import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
+import { cookies } from 'next/headers'
 
-const HomePage = () => {
-  return <div>HomePage</div>
+export default async function HomePage() {
+  const supabase = createServerComponentClient({ cookies })
+  const { data: pockets } = await supabase.from('pockets').select('*')
+  return (
+    <div>
+      HomePage
+      <pre>{JSON.stringify(pockets, null, 2)}</pre>
+    </div>
+  )
 }
-
-export default HomePage
