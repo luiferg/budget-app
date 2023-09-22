@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { AuthButtonServer } from '.'
+import { SignInOutButton } from '.'
 
 const Navbar = () => {
   return (
@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className='flex flex-row lg:gap-8 items-center'>
           <Link href='/dashboard'>Dashboard</Link>
           <Link href='/about'>About</Link>
-          <AuthButtonServer />
+          <SignInOutButton />
         </div>
       </nav>
     </header>
