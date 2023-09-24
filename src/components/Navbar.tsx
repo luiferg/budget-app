@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { SignInOutButton } from '.'
 
 const Navbar = () => {
   return (
@@ -9,9 +8,7 @@ const Navbar = () => {
           HF
         </Link>
         <div className='flex flex-row lg:gap-8 items-center'>
-          <Link href='/dashboard'>Dashboard</Link>
           <Link href='/about'>About</Link>
-          <SignInOutButton />
         </div>
       </nav>
     </header>

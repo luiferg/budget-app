@@ -1,4 +1,4 @@
-import { GithubAuthButtonClient } from '.'
+import { GoogleAuthButton } from './GoogleAuthButton'
 
 const SignInCard = () => {
   return (
@@ -9,7 +9,9 @@ const SignInCard = () => {
       <h2>Let's improve your finance together!</h2>
       <h3>Sign In</h3>
       <ul>
-        <GithubAuthButtonClient />
+        <li>
+          <GoogleAuthButton />
+        </li>
       </ul>
     </section>
   )
